@@ -205,7 +205,7 @@ nav a {
 
 /* At 768px And below do the following: */
  /* Tablet */
- @media (max-width: 768px) {
+@media (max-width: 768px) {
     .box {
         max-width: 25vw;
         background: black;
@@ -243,6 +243,9 @@ nav a {
     .jumbotron {
         margin-top: 3.5vh;
     }
+    .jumbotron img {
+        width: 100vw;
+    }
     footer nav {
         display: flex;
         flex-direction: row;
@@ -252,21 +255,26 @@ nav a {
 
 /* At 400px And below do the following: */
  /* Mobile */
- @media (max-width: 400px) {
-   .box {
-       min-width: 25vw;
-   }
-   .boxes {
-       display: flex;
-       flex-direction: row-reverse;
-       flex-wrap: wrap;
-   }
-   .box10 {
-    display: none !important;
-}
+@media (max-width: 400px) {
+    .box {
+        min-width: 25vw;
+    }
+    .boxes {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+    }
+    .middle-content .boxes .box10 {
+        display: none;
+    }
     nav ul {
         display: flex;
         flex-direction: column;
+    }
+    nav ul li {
+        border-top: 1px solid black;
+        width: 100%;
+        padding: 2vh;
     }
     .jumbotron img {
         width: 100vw;
