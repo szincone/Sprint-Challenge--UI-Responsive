@@ -233,9 +233,13 @@ nav a {
    body{
        background: teal;
    }
+   .box {
+       width: 25vw !important;
+   }
    .boxes {
        display: flex;
        flex-direction: row-reverse;
+       flex-wrap: wrap;
    }
    .box10 {
     display: none !important;
@@ -248,6 +252,11 @@ nav a {
         width: 100vw;
     }
     .top-content {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2vh;
+    }
+    .bottom-content {
         flex-direction: column;
         align-items: flex-start;
         padding: 2vh;
