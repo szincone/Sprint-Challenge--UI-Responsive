@@ -169,33 +169,66 @@ nav a {
 
 }
 
-.box1 {
-    background: teal;
-}
 .box2 {
     background: forestgreen !important;
-}
-.box3 {
-    background: gold !important;
 }
 .box4 {
     background: darkorchid !important;
 }
-.box5 {
-    background: cadetblue !important;
-}
 .box6 {
     background: hotpink !important;
-}
-.box7 {
-    background: coral !important;
 }
 .box8 {
     background: indigo !important;
 }
-.box9 {
-    background: crimson !important;
-}
 .box10 {
     background: lawngreen !important;
+}
+
+/* Media Queries */
+
+/* At 768px And below do the following: */
+ /* Tablet */
+ @media (max-width: 768px) {
+    .box1 {
+        background: teal;
+    }
+    .box3 {
+        background: gold !important;
+    }
+    .box5 {
+        background: cadetblue !important;
+    }
+    .box7 {
+        background: coral !important;
+    }
+    .box9 {
+        background: crimson !important;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav a {
+        justify-content: center;
+        padding: .5vh 6.5vw;
+    }
+    nav a img {
+        padding-top: 3vh;
+    }
+    nav ul {
+        justify-content: center;
+    }
+    .jumbotron {
+        margin-top: 3.5vh;
+    }
+    footer {
+        display: none;
+    }
+}
+
+/* At 400px And below do the following: */
+ /* Mobile */
+ @media (max-width: 400px) {
+   
 }
