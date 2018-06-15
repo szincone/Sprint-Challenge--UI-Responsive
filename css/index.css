@@ -230,9 +230,6 @@ nav a {
 /* At 400px And below do the following: */
  /* Mobile */
  @media (max-width: 400px) {
-   body{
-       background: teal;
-   }
    .box {
        width: 25vw !important;
    }
