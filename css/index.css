@@ -167,14 +167,24 @@ nav ul {
 nav a {
     display: flex;
     padding: 1.5vw 3vw;
+    text-decoration: none;
 }
 
 .jumbotron {
-    margin-top: 2.5vh;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .top-content {
     margin-top: 2.5vh;
+}
+
+.box {
+    min-width: 25vw;
+    min-height: 25vw;
 }
 .middle-content .boxes .box2 {
     background: forestgreen;
@@ -207,8 +217,8 @@ nav a {
  /* Tablet */
 @media (max-width: 768px) {
     .box {
-        max-width: 25vw;
-        background: black;
+        min-width: 25vw;
+        min-height: 25vw;
     }
     .middle-content .boxes .box1 {
         background: teal;
@@ -227,12 +237,14 @@ nav a {
     }
     nav {
         display: flex;
-        flex-direction: column;
-        width: 100vw;
+        margin: 20px 0 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+}
     }
     nav a {
         justify-content: center;
-        padding: .5vh 6.5vw;
     }
     nav a img {
         padding-top: 1vh;
@@ -243,21 +255,19 @@ nav a {
     .jumbotron {
         margin-top: 3.5vh;
     }
-    .jumbotron img {
-        width: 100vw;
-    }
     footer nav {
         display: flex;
         flex-direction: row;
         padding: 1vh;
     }
-}
+
 
 /* At 400px And below do the following: */
  /* Mobile */
 @media (max-width: 400px) {
     .box {
         min-width: 25vw;
+        min-height: 25vw;
     }
     .boxes {
         display: flex;
@@ -267,17 +277,20 @@ nav a {
     .middle-content .boxes .box10 {
         display: none;
     }
+    
     nav ul {
         display: flex;
         flex-direction: column;
+        margin: 4vh 0 0;
+        width: 100%;
     }
     nav ul li {
         border-top: 1px solid black;
         width: 100%;
         padding: 2vh;
     }
-    .jumbotron img {
-        width: 100vw;
+    .jumbotron {
+        margin: 0 0 20px;
     }
     .top-content {
         flex-direction: column;
