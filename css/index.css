@@ -244,8 +244,15 @@ nav a {
         display: flex;
         flex-direction: column;
     }
+    .jumbotron img {
+        width: 100vw;
+    }
     .top-content {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        padding: 2vh;
+    }
+    p {
+        width: 80vw;
     }
 }
