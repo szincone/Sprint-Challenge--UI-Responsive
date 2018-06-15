@@ -22,7 +22,7 @@ time, mark, audio, video {
     /* changed font-size */
 	font-size:62.5%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -154,56 +154,76 @@ footer nav a {
 nav {
     display: flex;
     justify-content: center;
-    
+    margin-right: 9.1vw;
+    margin-top: 1vh;
 }
 
 nav ul {
     display: flex;
     align-items: center;
-    padding-top: 2.5vh
+    padding-top: 2vh;
 }
 
 nav a {
     display: flex;
     padding: 1.5vw 3vw;
-
 }
 
-.box2 {
-    background: forestgreen !important;
-}
-.box4 {
-    background: darkorchid !important;
-}
-.box6 {
-    background: hotpink !important;
-}
-.box8 {
-    background: indigo !important;
-}
-.box10 {
-    background: lawngreen !important;
+.jumbotron {
+    margin-top: 2.5vh;
 }
 
+.top-content {
+    margin-top: 2.5vh;
+}
+.middle-content .boxes .box2 {
+    background: forestgreen;
+}
+.middle-content .boxes .box4 {
+    background: darkorchid;
+}
+.middle-content .boxes .box6 {
+    background: hotpink;
+}
+.middle-content .boxes .box8 {
+    background: indigo;
+}
+.middle-content .boxes .box10 {
+    background: lawngreen;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    font-size: .9rem;
+}
+
+.footer nav {
+    padding: 0;
+}
 /* Media Queries */
 
 /* At 768px And below do the following: */
  /* Tablet */
  @media (max-width: 768px) {
-    .box1 {
+    .box {
+        max-width: 25vw;
+        background: black;
+    }
+    .middle-content .boxes .box1 {
         background: teal;
     }
-    .box3 {
-        background: gold !important;
+    .middle-content .boxes .box3 {
+        background: gold;
     }
-    .box5 {
-        background: cadetblue !important;
+    .middle-content .boxes .box5 {
+        background: cadetblue;
     }
-    .box7 {
-        background: coral !important;
+    .middle-content .boxes .box7 {
+        background: coral;
     }
-    .box9 {
-        background: crimson !important;
+    .middle-content .boxes .box9 {
+        background: crimson;
     }
     nav {
         display: flex;
@@ -231,7 +251,7 @@ nav a {
  /* Mobile */
  @media (max-width: 400px) {
    .box {
-       width: 25vw !important;
+       min-width: 25vw;
    }
    .boxes {
        display: flex;
