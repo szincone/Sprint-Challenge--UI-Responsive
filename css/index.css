@@ -18,8 +18,9 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
-	font-size: 100%;
+    border: 0;
+    /* changed font-size */
+	font-size:62.5%;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -57,7 +58,8 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-size: 18px;
+    /* changed */
+    font-size: 1.125rem;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
 }
@@ -67,7 +69,8 @@ p {
 }
 
 .container {
-    width: 800px;
+    /* changed width to max-width */
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -137,10 +140,28 @@ footer nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
-    font-size: 14px;
+    /* changed */
+    font-size: 0.875rem;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* My CSS for the Sprint */
+
+nav {
+    display: flex;
+    justify-content: center;
+    
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
 }
