@@ -160,8 +160,42 @@ nav {
 nav ul {
     display: flex;
     align-items: center;
+    padding-top: 2.5vh
 }
 
-nav ul li {
+nav a {
     display: flex;
+    padding: 1.5vw 3vw;
+
+}
+
+.box1 {
+    background: teal;
+}
+.box2 {
+    background: forestgreen !important;
+}
+.box3 {
+    background: gold !important;
+}
+.box4 {
+    background: darkorchid !important;
+}
+.box5 {
+    background: cadetblue !important;
+}
+.box6 {
+    background: hotpink !important;
+}
+.box7 {
+    background: coral !important;
+}
+.box8 {
+    background: indigo !important;
+}
+.box9 {
+    background: crimson !important;
+}
+.box10 {
+    background: lawngreen !important;
 }
