@@ -228,13 +228,14 @@ nav a {
     nav {
         display: flex;
         flex-direction: column;
+        width: 100vw;
     }
     nav a {
         justify-content: center;
         padding: .5vh 6.5vw;
     }
     nav a img {
-        padding-top: 3vh;
+        padding-top: 1vh;
     }
     nav ul {
         justify-content: center;
@@ -242,8 +243,10 @@ nav a {
     .jumbotron {
         margin-top: 3.5vh;
     }
-    footer {
-        display: none;
+    footer nav {
+        display: flex;
+        flex-direction: row;
+        padding: 1vh;
     }
 }
 
