@@ -245,6 +245,7 @@ footer nav a {
   background: white;
   top: 0;
   margin: 0 auto;
+  width: 100%;
 }
 
 nav {
@@ -300,15 +301,6 @@ nav a {
   background: lawngreen;
 }
 
-.footer {
-  display: flex;
-  justify-content: flex-start;
-  font-size: 0.9rem;
-}
-
-.footer nav {
-  padding: 0;
-}
 /* Media Queries */
 
 /* At 768px And below do the following: */
@@ -357,6 +349,7 @@ footer nav {
   display: flex;
   flex-direction: row;
   padding: 1vh;
+  flex-wrap: nowrap;
 }
 
 /* At 400px And below do the following: */
@@ -374,7 +367,6 @@ footer nav {
   .middle-content .boxes .box10 {
     display: none;
   }
-
   nav ul {
     display: flex;
     flex-direction: column;
@@ -387,7 +379,7 @@ footer nav {
     padding: 2vh;
   }
   .jumbotron {
-    margin: 0 0 20px;
+    margin: 50vh 0 20px;
   }
   .top-content {
     flex-direction: column;
@@ -405,5 +397,9 @@ footer nav {
   footer {
     display: flex;
     justify-content: center;
+  }
+  footer nav {
+    flex-wrap: wrap;
+    width: 100%;
   }
 }
